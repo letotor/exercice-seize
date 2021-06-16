@@ -1,4 +1,4 @@
-<p>Merci #prenom# #nom#,</p>
+<p class="titre">Merci #prenom# #nom#,</p>
 
 <p><strong>Votre soumission est un succès !</strong></p>
 
