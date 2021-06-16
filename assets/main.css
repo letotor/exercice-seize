@@ -55,6 +55,9 @@ header{
 }
 
 
+/* Gestion de focus sur la navigation
+*
+*/
 li a:after {
   content: '';
   display: block;
@@ -64,12 +67,19 @@ li a:after {
   background: transparent;
   transition: width .5s ease, background-color .5s ease;
 }
-li a:hover:after {
+
+ li a:hover, a:hover:after {
+  width: 95%;
+  border-radius: 2px;
+  color: rgb(229, 149, 164);
+}
+
+li a:focus:after,li a:active:after   {
+    content: '';
   width: 95%;
   border-radius: 2px;
   background: rgb(229, 149, 164);
 }
-
 /* Fin  Definition du header menu navigation */
 
 

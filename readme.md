@@ -15,3 +15,6 @@
 ( c'est la dessus que je veux devenir un expert généré des modeles rapidement à partir d'un design!)
 
 Un echange à loral permettra d'aborder de nombreux point pour les axes d'ameliorations et progression professionelle ! 
+
+## Resultat visuel 
+![alt resultat](./jpg/Resultat/preview.png "preview")

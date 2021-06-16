@@ -14,13 +14,15 @@ require_once(dirname(__FILE__) . "/inc/functions.php");
   
   <body>
   <header>
-    <img  class=logo src="/img/rocket.svg" width='30px' height='30'px' alt="logo"/>
+    <a href="#">
+    <img href="#" class=logo src="/img/rocket.svg" width='30px' height='30'px' alt="logo"/>
+    </a>
       <nav class="nav" role="navigation">
         <ul clas="menu">
-          <li><a href="#">Services</a></li>
-          <li><a href="#">Projet</a></li>
-          <li><a href="#">Equipe</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#projets">Projet</a></li>
+          <li><a href="#equipe">Equipe</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
   </nav>
   </header>
