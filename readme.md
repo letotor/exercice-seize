@@ -71,7 +71,7 @@ Le principe est donc de :
 
 ![alt resultat](./jpg/Resultat/React/preview.png "preview")  
 ---  
-
+DEMO : https://agenceseize-dgwebcreation.netlify.app/
 
 ## Travail realisé
 - installation de laragon pour le serveur php avec domaine local https://exerciceseize.local
