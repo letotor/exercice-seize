@@ -8,6 +8,7 @@
 
 - probleme de police suivant les navigateurs differents bien que l'import via google font soit réalisé... A creuser!
 
+- utiliser le Scss pour factorisation du code extension de theme
 
 
 - L'exercice etait vraiment super car il demande de  coller au plus pres du modele du design . C'est la dessus notemment sur partie  responsive du site que les amélioration sont a faire... !L'experience permettra de gagner en rapidité

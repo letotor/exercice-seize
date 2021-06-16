@@ -1,13 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap'); 
 
 
-
-
 *{
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  /* font-family: "Nunito", sans-serif; */
   font-family: 'Roboto', sans-serif;
 }
 
@@ -22,13 +19,12 @@ body {
   /* margin: 40px; */
 }
 
-/* Debut Definitino du header menu navigation */
+/* Debut Definition du header menu navigation */
 header{
   display:flex;
   justify-content: space-between;
   align-items: center;
   padding:20px 5%;
-  /* flex-direction: row; */
 }
 
 .logo{
@@ -45,8 +41,6 @@ header{
   padding: 0px 20px;
 }
 
-
-
 .nav li a{
    color:#ffffff;
     text-transform: uppercase;
@@ -56,13 +50,32 @@ header{
   
 }
 .nav li a:hover{
-  color: rgb(229, 149, 164);
+  /* color: rgb(229, 149, 164); */
   opacity:0.8;
 }
 
 
-/* Fin  Definitino du header menu navigation */
+li a:after {
+  content: '';
+  display: block;
+  margin: auto;
+  height: 4px;
+  width: 0;
+  background: transparent;
+  transition: width .5s ease, background-color .5s ease;
+}
+li a:hover:after {
+  width: 95%;
+  border-radius: 2px;
+  background: rgb(229, 149, 164);
+}
 
+/* Fin  Definition du header menu navigation */
+
+
+/*
+* 
+*/
 #container {
   display: flex;
   vertical-align: middle;
@@ -73,25 +86,20 @@ header{
 
 .contact-box {
   display: flex;
-  
-  /* max-width: 1200px; */
-  /* margin: 0px 100px; */
   height: 90vh;
-   width: 100%;
+  width: 100%;
   justify-content: center;
   align-items: center;
   text-align: center;
 
   background-color: #2d3049;
+  border-radius: 20px;
   box-shadow: 3px 3px 15px 3px #141622;
   overflow: hidden;
-
-  border-radius: 20px;
-
 }
 
 /*
-pour la reponse au formulaire gere dynamiquement
+pour modifier le visuel du formulaire dynamiquement (classe secondaire generé par jQery)
 */
 .result{
   display: flex;
@@ -112,6 +120,10 @@ pour la reponse au formulaire gere dynamiquement
   font-size:28px;
 }
 
+/**
+*Panneau latéral gauche
+*/
+
 .left {
   display: flex;
   height: 100%;
@@ -124,15 +136,10 @@ pour la reponse au formulaire gere dynamiquement
 
 }
 
-.left .imgBx {
-  /* text-align: center;
-  align-items: center;
-   object-fit: "contain";
-  overflow: hidden; */
 
-}
-
-
+/**
+*Panneau latéral droit
+*/
 .right {
   display: flex;
   width: 50%;
@@ -147,6 +154,9 @@ pour la reponse au formulaire gere dynamiquement
   background-color: #2d3049;
 }
 
+/*
+*definition du bouton soumettre
+*/
 input[type="submit"] {
   /* background: transparent; */
   
@@ -166,26 +176,32 @@ input[type="submit"] {
   
   font-weight: 700;
   font-size: 1rem;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
 }
     
 input[type="submit"]:hover {
   border: white;
   transform: translateY(-2px);
 }
+
+/* bouton enfoncé uniqmenet */
 input[type="submit"]:active {
   border: 1px solid white;
   transform: translateY(-2px);
   opacity:0.8;
 }
+/*
+* fin de definition du bouton soumettre
+*/
+
+
 
 .title {
     font-family: "Nunito-Bold";
     font-size: 28px!important;
     font-weight: 700;
     line-height: 35px;
-  
 }
 
 h2{
@@ -209,12 +225,21 @@ form label  {
 #loader {
     margin-top:10px;
 }
+
+/*
+* Pour le message informatif de retour de la saisie
+*/
 #retour{
     /* display:none; */
     text-align: left;
     margin-left: 20px;
     margin-top:10px;
 }
+
+
+/*
+*MEdia query pour gerer les ecran moins faire passer le panneau de ggauche au de ssus de celui de droite ( modification de flex row -> flex colonom ou utilisation de grid ( layout area ..) a refaire...
+*/
 
 /* @media screen and (max-width: 640px) {
   .contact-box {
