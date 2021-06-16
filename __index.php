@@ -13,6 +13,10 @@ require_once(dirname(__FILE__) . "/inc/functions.php");
   
   
   <body>
+
+
+
+
   <header>
     <a href="#">
     <img href="#" class=logo src="/img/rocket.svg" width='30px' height='30'px' alt="logo"/>
@@ -52,6 +56,10 @@ require_once(dirname(__FILE__) . "/inc/functions.php");
 
     </section>
     <script type="text/javascript" src="assets/scripts.js"></script>
+  
+ <script type="text/javascript" src="index.js"></script>
+
+
   </body>
 
 

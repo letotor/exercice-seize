@@ -69,9 +69,8 @@ Le principe est donc de :
 
 ## Resultat visuel obtenu
 
-![alt resultat](./jpg/Resultat/preview.png "preview")  
+![alt resultat](./jpg/Resultat/React/preview.png "preview")  
 ---  
-![alt retour ](./jpg/Resultat/result_form.png "retour form")
 
 
 ## Travail realisé
