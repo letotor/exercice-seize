@@ -32,11 +32,11 @@ Le principe est donc de :
 - Afficher la réponse sur la page à la place du formulaire
   
 ---  
-**remarque developpeur**  
 
-`
-possibilité d'amelioration pour la geneartion dynamique des données avec regexpression cad remplacer dans le model #mavariable1# par ${mavariable1} . Plus besoins de passer parametre 
-`  
+**remarque developpeur**  
+- possibilité d'amelioration pour la geneartion dynamique des données avec regexpression cad remplacer dans le model #mavariable1# par ${mavariable1} => on s'affranchit de passer des  parametres 
+- enregistrement en base de l'utilisateur (base de formulaire pour inscription ajout mot de passe md5 )
+  
 ---  
 ## Partie Front :
 
@@ -51,18 +51,29 @@ Le principe est donc de :
 - S'il vous reste du temps et que vous trouvez cela utile en terme d'expérience utilisateur, vous pouvez ajouter des animations où bon vous semble
 
 ---  
-***remarque developpeur***
+**remarque developpeur**
 - probleme de police suivant les navigateurs differents bien que l'import via google font soit réalisé... A creuser!
 
-- utiliser le Scss pour factorisation du code extension de theme
+- utiliser le Scss pour factorisation du code et possibilité de gerer les couleurs du  theme + ajout d'un mode clair/sombre
+- Modification futur de l'exercice en reactJS et axios pour appel asynchrone & changement d'etat des composants (utilisation useState & useEffect)
 
 
-- L'exercice etait vraiment super car il demande de  coller au plus pres du modele du design . C'est la dessus notemment sur partie  responsive du site que les amélioration sont a faire... !L'experience permettra de gagner en rapidité
-( c'est la dessus que je veux devenir un expert généré des modeles rapidement à partir d'un design!)
+### Conclusion
+- L'exercice etait vraiment super car il demande de  coller au plus pres du modele du design . C'est la dessus notemment sur partie  responsive du site que les amélioration sont a faire... Notemment lorsque l'ecran est petit basculer l'image vers le haut et utiliser la grille sur une colonne  !L'experience permettra de gagner en rapidité
+( c'est la dessus qu'il faudra travailler pour acquerir de la rapidité!)
 
-Un echange à loral permettra d'aborder de nombreux point pour les axes d'ameliorations et progression professionelle ! 
+- Un echange à l'oral permettra d'aborder de nombreux point pour les axes d'ameliorations et progression de l'exercice ! 
 
 ---  
-## Resultat visuel obetenu
+---  
+
+## Resultat visuel obtenu
 
 ![alt resultat](./jpg/Resultat/preview.png "preview")
+
+## Travail realisé
+- installation de laragon pour le serveur php avec domaine local https://exerciceseize.local
+- gestion et soumission asynchrone du formulaire
+- gestion des RGs pour verification des champs vides et formatage des champs mails et telehpones
+- ajout d'un loader animé'  avec simulation de 1seconde coté traitement serveur
+- Creation des ecrans.
