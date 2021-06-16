@@ -30,30 +30,29 @@ if (!isset($nom) || empty($nom)){
 }
 if (!isset($prenom) || empty($prenom)){
     $success=false;
-    $msg[]="Votre prenom est vide";
+    $msg[]="Votre pr&eacute;nom est vide";
 
 }
 if (!isset($tel) || empty($tel)){
     $success=false;
-    if (filter_var($tel,FILTER_SANITIZE_NUMBER_INT)){
-         $msg[]="Votre numero de tel est incorrect";
-    }else{
-         $msg[]="Votre numero de telephone est vide";
+    $msg[]="Votre num&eacute;ro de t&eacute;l&eacute;phone est vide";
+}else{
+    if (!filter_var($tel,FILTER_SANITIZE_NUMBER_INT)){
+        $success=false;
+        $msg[]="Votre num&eacute;ro de t&eacute;l&eacute;phone est incorrect";
     }
-
 }
+
 if (!isset($email) || empty($email)){
     $success=false;
-    $tmp="Votre mail est vide";
-    if (filter_var($email,FILTER_VALIDATE_EMAIL)){
-          $tmp="Votre mail est incorrect";
+    $msg[]="Votre email est vide";
+}else{
+   if (!filter_var($email,FILTER_VALIDATE_EMAIL)){
+        $success=false;
+        $msg[]="Votre email  est incorrect";
      }
-    else{
-         $tmp="Votre mail est vide";
-     }
-    $msg[]= $tmp;
 }
-
+ 
 
 //on construit la page success dynamiquement
 if ($success){
