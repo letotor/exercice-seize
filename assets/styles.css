@@ -1,0 +1,137 @@
+/* Définition des différentes largeurs de conteneurs */
+
+.innerWidth,
+.innerMediumWidth,
+.innerSmallWidth {
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.innerWidth {
+  max-width: 1440px;
+}
+.innerMediumWidth {
+  max-width: 1240px;
+}
+.innerSmallWidth {
+  max-width: 940px;
+}
+
+@media only screen and (min-width: 820px) {
+  .innerWidth,
+  .innerMediumWidth,
+  .innerSmallWidth {
+    padding: 0;
+  }
+}
+
+/* Définition des grilles */
+
+.fullGrid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+}
+
+.fullGrid > * {
+  -webkit-box-flex: 100%;
+  -ms-flex: 100%;
+  flex: 100%;
+}
+
+@media only screen and (min-width: 820px) {
+  .fullGrid > * {
+    -webkit-box-flex: 50%;
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+
+  .revGrid {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: row-reverse;
+    flex-direction: row-reverse;
+  }
+
+  .grid20 {
+    -webkit-box-flex: 20%;
+    -ms-flex: 20%;
+    flex: 20%;
+    max-width: 20%;
+  }
+
+  .grid25 {
+    -webkit-box-flex: 25%;
+    -ms-flex: 25%;
+    flex: 25%;
+    max-width: 25%;
+  }
+
+  .grid30 {
+    -webkit-box-flex: 30%;
+    -ms-flex: 30%;
+    flex: 30%;
+    max-width: 30%;
+  }
+
+  .grid33 {
+    -webkit-box-flex: calc(100% / 3);
+    -ms-flex: calc(100% / 3);
+    flex: calc(100% / 3);
+    max-width: calc(100% / 3);
+  }
+
+  .grid40 {
+    -webkit-box-flex: 40%;
+    -ms-flex: 40%;
+    flex: 40%;
+    max-width: 40%;
+  }
+
+  .grid60 {
+    -webkit-box-flex: 60%;
+    -ms-flex: 60%;
+    flex: 60%;
+    max-width: 60%;
+  }
+
+  .grid66 {
+    -webkit-box-flex: calc(100% * 2 / 3);
+    -ms-flex: calc(100% * 2 / 3);
+    flex: calc(100% * 2 / 3);
+    max-width: calc(100% * 2 / 3);
+  }
+
+  .grid75 {
+    -webkit-box-flex: 75%;
+    -ms-flex: 75%;
+    flex: 75%;
+    max-width: 75%;
+  }
+
+  .grid80 {
+    -webkit-box-flex: 80%;
+    -ms-flex: 80%;
+    flex: 80%;
+    max-width: 80%;
+  }
+
+  .grid100 {
+    -webkit-box-flex: 100%;
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
