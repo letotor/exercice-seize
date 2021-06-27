@@ -67,16 +67,24 @@ Le principe est donc de :
 ---  
 ---  
 
-## Resultat visuel obtenu
-
-![alt resultat](./jpg/Resultat/preview.png "preview")  
+## Travail attendu pour le design
+![alt attendu](./jpg/Form screen.jpg "Form screen")  
 ---  
-![alt retour ](./jpg/Resultat/result_form.png "retour form")
+![alt retour ](./jpg/Confirmation screen.jpg "Confirmation screen")
+---  
+![alt retour ](./jpg/Errors screen.jpg "Errors screen")
 
 
-## Travail realisé
+
+
+
+## Travail realisé & Resultat visuel obtenu
 - installation de laragon pour le serveur php avec domaine local https://exerciceseize.local
 - gestion et soumission asynchrone du formulaire
 - gestion des RGs pour verification des champs vides et formatage des champs mails et telehpones
 - ajout d'un loader animé'  avec simulation de 1seconde coté traitement serveur
 - Creation des ecrans.
+
+![alt resultat](./jpg/Resultat/preview.png "preview")  
+---  
+![alt retour ](./jpg/Resultat/result_form.png "retour form")
