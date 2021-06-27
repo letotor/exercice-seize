@@ -68,7 +68,7 @@ Le principe est donc de :
 ---  
 
 ## Travail attendu pour le design
-![alt attendu](./jpg/Form screen.jpg "Form screen")  
+![alt attendu]('./jpg/Form screen.jpg' "Form screen")  
 ---  
 ![alt retour ](./jpg/Confirmation screen.jpg "Confirmation screen")
 ---  
